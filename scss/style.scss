@@ -1,0 +1,17 @@
+@import "_header";
+@import "_section";
+
+body {
+  font-size: 20px;
+  div {
+    background-color: aquamarine;
+    color: red;
+    width: 200px;
+    height: 200px;
+    .color {
+      width: 99px;
+      height: 99px;
+      background-color: black;
+    }
+  }
+}
