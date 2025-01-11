@@ -55,23 +55,3 @@
   font-weight: 900;
   src: url("../fonts/roboto-slab-v34-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.wrapper {
-  width: 1140px;
-}
-
-/* Header style start */
-
-/* Header style end */
