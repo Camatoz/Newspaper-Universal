@@ -20,7 +20,7 @@ html {
   /* --color-light-gray: #c4c4c4; */
   /* --color-dark-alternate: #131619; */
 
-  --border-radius: 30px;
+  --border-radius: 10px;
   --border: 1px solid var(--color-light);
 
   --font-family-base: "Lato", sans-serif;
@@ -139,7 +139,7 @@ svg * {
   color: var(--color-header-subtitle);
 }
 
-.header_title_wrap p {
+.header_title_wrap h2 {
   color: var(--color-dark-gray);
   font-size: 31px;
   font-family: "Roboto Slab";
@@ -184,7 +184,53 @@ svg * {
 }
 /* Header style end */
 
+/* Top-Cards Style start */
+.top_cards_wrapper {
+  background: var(--color-dark-gray);
+  padding-top: 30px;
+  padding-bottom: 315px;
+}
+
+.top_cards_container {
+  background: #30363d;
+  border-radius: var(--border-radius);
+}
+
+.top_card_text {
+  color: var(--color-light);
+  font-family: Roboto Slab;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 25px 20px 25px 25px;
+  max-width: 200px;
+}
+
+.top_card_img {
+  padding-right: 25px;
+  border-right: 1px solid #4b5157;
+}
+
+.top_card_border {
+  padding-right: 0;
+  border-right: none;
+}
+
+/* Top-Cards Style end */
+
 /* Media style start */
+@media (max-width: 1170px) {
+  .top_cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .top_card_border {
+    padding-right: 25px;
+    border-right: 1px solid #4b5157;
+  }
+}
+
 @media (max-width: 900px) {
   .header_menu_list {
     display: grid;
@@ -212,8 +258,17 @@ svg * {
   }
 
   .header_menu_list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+  }
+
+  .top_cards_container {
+    grid-template-columns: 1fr;
+  }
+
+  .top_cards_container {
+    margin-inline: auto;
+    width: 80%;
   }
 }
 
@@ -230,6 +285,10 @@ svg * {
 }
 
 @media (max-width: 500px) {
+  .header_menu_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .header_subtitle {
     flex-direction: column;
     justify-content: space-between;
@@ -238,6 +297,12 @@ svg * {
   }
 
   .header_title_data {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .header_title {
     flex-direction: column;
   }
 }
