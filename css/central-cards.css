@@ -1,8 +1,7 @@
 /* Section Central_cards Style start */
 .central_cards {
   background-color: var(--color-body-bg);
-  padding-bottom: 30px;
-  /* margin-block: 0; */
+  padding-bottom: 60px;
 }
 
 .central_cards_wrapper {

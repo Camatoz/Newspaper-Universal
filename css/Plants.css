@@ -1,0 +1,36 @@
+.plants {
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.plants_bg {
+  height: 270px;
+  background: url(../img/flover-bg.png) no-repeat center;
+}
+
+.plants_title {
+  font-family: Roboto Slab;
+  font-size: clamp(20px, 3.51vw, 40px);
+  line-height: 1.2;
+  color: #ffffff;
+  padding-block: 50px 25px;
+}
+
+.plants_link_wrap {
+  position: relative;
+}
+
+.planets_link {
+  font-weight: 400;
+  padding-inline: 25px 45px;
+}
+
+.planets_link::after {
+  content: "";
+  position: absolute;
+  right: 47%;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Icon/arrow-right.svg) center / 70% no-repeat;
+}
