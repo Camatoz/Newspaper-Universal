@@ -64,6 +64,34 @@
     padding-left: 15px;
     padding-bottom: 10px;
   }
+
+  .central_cards_wrapper {
+    display: grid;
+    justify-items: center;
+    gap: 2em;
+    grid-template-areas:
+      "cars cars"
+      "cars cars"
+      "cats popular"
+      "cats popular"
+      "box-1 columns"
+      "box-2 columns"
+      "box-3 columns"
+      "box-4 columns";
+  }
+
+  .cats_title {
+    padding-block: 10px 20px;
+    padding-left: 0;
+  }
+
+  .cont-center {
+    justify-items: center;
+  }
+
+  .central_cards_link_wrap {
+    padding-block: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -136,6 +164,41 @@
     order: 1;
     flex-grow: 1;
     justify-items: center;
+  }
+
+  .central_cards_wrapper {
+    display: grid;
+    max-width: 263px;
+    gap: 2em;
+    grid-template-areas:
+      "cars"
+      "cats"
+      "popular"
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4"
+      "columns";
+  }
+
+  .cars_subtitle_wrap {
+    flex-direction: column;
+  }
+
+  .cars_subtitle_image {
+    padding: 0;
+  }
+
+  .cars_subtitle_text {
+    text-align: center;
+  }
+
+  .central_cards_columns_wrap {
+    padding-block: 35px 0;
+  }
+
+  .popular_reporter_info_box {
+    padding-bottom: 10px;
   }
 }
 

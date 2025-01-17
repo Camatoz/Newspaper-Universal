@@ -264,6 +264,8 @@
 
 .cats {
   grid-area: cats;
+  flex-direction: column;
+  max-width: 263px;
   background-color: var(--color-light);
 }
 
