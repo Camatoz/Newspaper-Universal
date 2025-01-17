@@ -1,0 +1,335 @@
+/* Section Central_cards Style start */
+.central_cards {
+  background-color: var(--color-body-bg);
+  padding-bottom: 30px;
+  /* margin-block: 0; */
+}
+
+.central_cards_wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "cars cars popular columns"
+    "cars cars popular columns"
+    "cats box-1 box-2 columns"
+    "cats box-3 box-4 columns";
+}
+
+.central_cards_wrapper * {
+  border-radius: var(--border-radius);
+}
+
+.cars {
+  grid-area: cars;
+  background-color: var(--color-light);
+  max-width: 555px;
+}
+
+.cars_wrap {
+  align-items: flex-start;
+}
+
+.cars_wrap_desc {
+  max-width: 263px;
+  padding-left: 35px;
+}
+
+.cars_subtitle {
+  font-size: 12px;
+  color: var(--color-subtitle);
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.cars_title {
+  font-family: Roboto Slab;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--color-dark-gray);
+  padding-bottom: 25px;
+}
+
+.cars_text {
+  color: var(--color-header-subtitle);
+  line-height: 1.5;
+}
+
+.cars_subtitle_wrap {
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+}
+
+.cars_subtitle_image {
+  padding: 5px 5px 0 35px;
+}
+
+.cars_subtitle_comment_box {
+  padding-left: 15px;
+}
+
+.cars_subtitle_comment_box_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  padding-top: 3px;
+}
+
+.cars_subtitle_comment_box_img img {
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.cars_subtitle_comment_num {
+  font-size: 12px;
+  color: var(--color-header-text);
+  padding-left: 5px;
+}
+
+.cars_subtitle_img {
+  width: 35px;
+  height: auto;
+}
+
+.cars_subtitle_name {
+  color: var(--color-dark-gray);
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+.cars_subtitle_text {
+  color: var(--color-header-subtitle);
+}
+
+.popular {
+  grid-area: popular;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25px;
+  width: 262px;
+  background: url(../img/Central-Cards/hand.png) no-repeat center / cover;
+  background-color: #4b5157;
+}
+
+.popular_subtitle_first {
+  padding: 20px 0 115px 0;
+  line-height: 1;
+  color: var(--color-light);
+  font-weight: 400;
+}
+
+.popular_subtitle_second {
+  color: var(--color-subtitle);
+  font-size: 12px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.popular_title {
+  max-width: 200px;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.popular_reporter_image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.popular_reporter_info {
+  padding-left: 10px;
+}
+
+.popular_reporter_info_title {
+  color: var(--color-light);
+}
+
+.popular_reporter_info_date,
+.popular_reporter_info_likes_num,
+.popular_reporter_info_comm_num {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-light);
+  padding-right: 10px;
+}
+
+.popular_reporter_info_img {
+  border-radius: 0;
+  padding-right: 5px;
+}
+
+.columns {
+  grid-area: columns;
+  width: 262px;
+  background-color: var(--color-bg-alternative);
+  color: var(--color-light);
+}
+
+.central_cards_columns_subtitle {
+  padding: 20px 25px;
+  font-weight: 400;
+  border-bottom: 1px solid #b4d1e0;
+  border-radius: 0;
+}
+
+.central_cards_columns_wrap {
+  border-radius: 0;
+  padding-inline: 25px 35px;
+  padding-block: 45px 0;
+}
+
+.central_cards_columns_card {
+  border-bottom: 1px solid #b4d1e0;
+  border-radius: 0;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.central_cards_columns_card_title {
+  position: relative;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  line-height: 25px;
+  z-index: 1;
+  padding-bottom: 15px;
+}
+
+.central_cards_columns_card_title::before {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/Central-Cards/Quote.svg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.central_cards_columns_card_reporter_box {
+  padding-bottom: 40px;
+}
+
+.central_cards_columns_card_reporter_title_box {
+  align-items: baseline;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.central_cards_columns_card_reporter_name {
+  line-height: 20px;
+  color: #d1e2eb;
+}
+
+.central_cards_columns_card_reporter_profession {
+  font-size: 12px;
+  line-height: 15px;
+  color: #d1e2eb;
+}
+
+.central_cards_columns_card_reporter_title_box .cats {
+  grid-area: cats;
+  flex-direction: column;
+  background-color: var(--color-light);
+  max-width: 262px;
+}
+
+.central_cards_link_wrap {
+  text-align: center;
+  border-top: 1px solid #b4d1e0;
+  border-radius: 0;
+  padding-top: 10px;
+}
+
+.central_cards_link {
+  font-weight: 400;
+  padding: 15px;
+  color: var(--color-light);
+}
+
+.cats {
+  grid-area: cats;
+  background-color: var(--color-light);
+}
+
+.cats_images img {
+  border-radius: 0;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.central_cards_title_box {
+  font-family: Roboto Slab;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--color-dark-gray);
+  max-width: 200px;
+  font-weight: 700;
+}
+
+.cats_title {
+  padding-block: 10px 30px;
+  padding-left: 25px;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+.central_cards_box {
+  background-color: var(--color-light);
+  color: var(--color-header-subtitle);
+  width: 263px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.central_cards_box_wrap {
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.central_cards_title_title {
+  padding-block: 25px 5px;
+}
+
+.central_cards_box_subtitle {
+  padding-bottom: 10px;
+  line-height: 20px;
+  max-width: 213px;
+}
+
+.central_cards_box_subtitle_date {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-header-text);
+}
+/* Section Central_cards Style end */
