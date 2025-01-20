@@ -92,6 +92,29 @@
   .central_cards_link_wrap {
     padding-block: 10px;
   }
+
+  .articles_wrapper {
+    gap: 20px;
+  }
+
+  .articles_card_border {
+    flex-direction: column;
+    max-width: 460px;
+    padding-top: 10px;
+  }
+
+  .articles_card_body {
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .articles_card_border {
+    padding-bottom: 20px;
+  }
+
+  .articles_card_body {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -199,6 +222,14 @@
 
   .popular_reporter_info_box {
     padding-bottom: 10px;
+  }
+
+  .articles_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .articles_aside {
+    width: 100%;
   }
 }
 

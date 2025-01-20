@@ -252,13 +252,20 @@
   text-align: center;
   border-top: 1px solid #b4d1e0;
   border-radius: 0;
-  padding-top: 10px;
 }
 
 .central_cards_link {
   font-weight: 400;
   padding: 15px;
   color: var(--color-light);
+  width: 100%;
+  display: block;
+}
+
+.central_cards_link:hover {
+  color: var(--color-bg-alternative);
+  background-color: var(--color-light);
+  border-radius: 0 0 10px 10px;
 }
 
 .cats {
