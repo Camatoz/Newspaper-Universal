@@ -1,0 +1,137 @@
+:root {
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-body-bg: #f5f5f5;
+  --color-dark-gray: #262d33;
+  --color-border: #d9dadb;
+  --color-header-text: #939699;
+  --color-header-subtitle: #4b5157;
+  --color-button-bg: #4592ff;
+  --color-subtitle: #3bbdc4;
+  --color-bg-alternative: #6e99ae;
+  --color-bg-winner: #b4d1e0;
+
+  /* --color-light-gray: #c4c4c4; */
+  /* --color-dark-alternate: #131619; */
+
+  --border-radius: 10px;
+  --border: 1px solid var(--color-light);
+
+  --font-family-base: "Lato", sans-serif;
+  --font-family-accent: "Roboto Slab", sans-serif;
+
+  --input-height: 54px;
+
+  --container-width: 1140px;
+  --container-padding-x: 15px;
+
+  --transition-duration: 0.2s;
+
+  --header-height: 90px;
+}
+
+.winners {
+  background-color: var(--color-dark-gray);
+  padding-block: 60px;
+}
+
+.winner_cards_wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "winner winner careers careers"
+    "winner winner careers careers"
+    "winner winner box-1 box-2";
+}
+
+.winner {
+  grid-area: winner;
+  width: 555px;
+  height: 570px;
+  background: url(../img/winner-bg-1.png) no-repeat center / cover;
+  border-radius: var(--border-radius);
+}
+
+.careers {
+  grid-area: careers;
+  max-width: 555px;
+  height: 370px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg-winner);
+}
+
+.box-1 {
+  grid-area: box-1;
+  border-radius: var(--border-radius);
+  height: 170px;
+}
+
+.box-2 {
+  grid-area: box-2;
+  border-radius: var(--border-radius);
+  height: 170px;
+}
+
+.winner_subtitle {
+  display: inline-block;
+  margin: 35px;
+  padding: 5px 12px;
+  background-color: #ff4f52;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-light);
+  border-radius: 3px;
+}
+
+.winners_description {
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.winner_reporter_name {
+  font-weight: 400;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.winner_reporter_desc {
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 50px;
+}
+
+.winners_title {
+  /* max-width: 455px; */
+  font-family: Roboto Slab;
+  font-size: clamp(20px, 3.51vw, 40px);
+  line-height: 1.2;
+  padding-bottom: 70px;
+}
+
+.winners_link {
+  padding-inline: 50px;
+  font-weight: 400;
+}
+
+.winners_link_box {
+  position: relative;
+}
+
+.winners_link::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Icon/winner-galery-icon.svg) center / 70% no-repeat;
+}
+
+.winners_link::after {
+  content: "21";
+  position: absolute;
+  right: 15px;
+  height: 100%;
+  aspect-ratio: 1;
+  /* background: url(../img/Icon/arrow-right.svg) center / 70% no-repeat; */
+}

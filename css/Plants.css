@@ -19,6 +19,7 @@
 
 .plants_link_wrap {
   position: relative;
+  display: inline-block;
 }
 
 .planets_link {
@@ -29,7 +30,7 @@
 .planets_link::after {
   content: "";
   position: absolute;
-  right: 47%;
+  right: 10px;
   height: 100%;
   aspect-ratio: 1;
   background: url(../img/Icon/arrow-right.svg) center / 70% no-repeat;
