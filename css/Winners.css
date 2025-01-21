@@ -133,5 +133,89 @@
   right: 15px;
   height: 100%;
   aspect-ratio: 1;
-  /* background: url(../img/Icon/arrow-right.svg) center / 70% no-repeat; */
 }
+
+.careers_description {
+  padding-left: 35px;
+  width: 50%;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.careers_subtitle {
+  text-transform: uppercase;
+  color: var(--color-bg-alternative);
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  padding-block: 35px 20px;
+}
+
+.careers_title {
+  font-weight: 700;
+  font-family: Roboto Slab;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-dark-gray);
+  padding-bottom: 15px;
+}
+
+.careers_text {
+  color: var(--color-header-subtitle);
+  max-width: 213px;
+  padding-bottom: 25px;
+}
+
+.careers_link_box {
+  position: relative;
+}
+
+.careers_link {
+  font-weight: 400;
+  padding-inline: 25px 45px;
+}
+
+.careers_link::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Icon/arrow-right.svg) center / 70% no-repeat;
+}
+
+.careers_images {
+  width: 50%;
+  position: relative;
+}
+
+.careers_img {
+  position: relative;
+  z-index: 2;
+}
+
+.careers_circle {
+  display: block;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  color: #d1e2eb;
+  background-color: #d1e2eb;
+  z-index: 1;
+}
+
+/* .careers_img {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 248px;
+  height: 352px;
+  aspect-ratio: 1;
+  background: url(../img/winner-girl.png) center / 70% no-repeat;
+} */

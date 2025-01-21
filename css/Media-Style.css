@@ -115,6 +115,18 @@
   .articles_card_body {
     padding-left: 0;
   }
+
+  .winner_cards_wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "winner winner"
+      "winner winner"
+      "winner winner"
+      "careers careers"
+      "careers careers"
+      "box-1 box-2";
+  }
 }
 
 @media (max-width: 900px) {
@@ -229,6 +241,72 @@
   }
 
   .articles_aside {
+    width: 100%;
+  }
+
+  .winners {
+    padding-block: 30px;
+  }
+
+  .winner_cards_wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "winner"
+      "winner"
+      "winner"
+      "careers"
+      "careers"
+      "box-1"
+      "box-2";
+  }
+
+  .winner_cards_wrapper {
+    gap: 15px;
+  }
+
+  .winner {
+    width: 100%;
+    height: auto;
+  }
+
+  .careers {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .winners_description {
+    padding-bottom: 25px;
+  }
+
+  .winner_subtitle {
+    margin: 25px;
+  }
+
+  .winner_reporter_desc {
+    padding-bottom: 25px;
+  }
+
+  .winners_title {
+    padding-bottom: 35px;
+  }
+
+  .careers_description {
+    height: auto;
+  }
+
+  .careers_description {
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+
+  .careers_circle {
+    width: 50vw;
+    aspect-ratio: 1;
+    height: auto;
+  }
+  .box-width {
     width: 100%;
   }
 }
