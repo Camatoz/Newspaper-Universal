@@ -309,6 +309,18 @@
   .box-width {
     width: 100%;
   }
+
+  .subscribe {
+    padding-block: 30px;
+  }
+
+  .subscribe_form_input {
+    min-width: 90%;
+  }
+
+  .subscribe_form_button {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 500px) {

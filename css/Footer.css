@@ -1,0 +1,31 @@
+.subscribe {
+  padding-block: 60px;
+  background-color: var(--color-body-bg);
+  text-align: center;
+}
+
+.suscribe_title {
+  padding-bottom: 25px;
+}
+
+.subscribe {
+  font-family: Roboto Slab;
+  font-size: clamp(20px, 3.51vw, 40px);
+  line-height: 1.2;
+  color: var(--color-dark-gray);
+  font-weight: 700;
+}
+
+.subscribe_form_input {
+  border: 1px solid var(--color-border);
+  padding: 10px;
+  color: var(--color-header-text);
+  background-color: var(--color-body-bg);
+  min-width: 313px;
+  border-radius: 5px;
+}
+
+.subscribe_form_button {
+  padding-inline: 25px;
+  margin-left: 10px;
+}
