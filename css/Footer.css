@@ -80,3 +80,42 @@
   padding-bottom: 0;
 }
 /* Navigation style end */
+
+/* Contact style start */
+.footer_contacts_wrapper {
+  padding-block: 30px;
+  border-top: 1px solid var(--color-border);
+  justify-content: space-between;
+}
+
+.footer_contacts_logo {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-button-bg);
+  color: var(--color-light);
+  border-radius: 50%;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer_contacts_item {
+  padding-right: 30px;
+}
+
+.footer_contacts_link {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+}
+
+.footer_contacts_socialmedia_box {
+  width: 205px;
+  justify-content: space-between;
+}
+/* Contact style end */
+
+.footer_copirite_wrapper {
+  padding-block: 40px 55px;
+  border-top: 1px solid var(--color-border);
+}
