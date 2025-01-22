@@ -31,12 +31,14 @@
 .box-1 {
   grid-area: box-1;
   border-radius: var(--border-radius);
-  height: 170px;
 }
 
 .box-2 {
   grid-area: box-2;
   border-radius: var(--border-radius);
+}
+
+.box-width {
   height: 170px;
 }
 

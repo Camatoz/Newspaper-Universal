@@ -140,6 +140,10 @@
   .header_menu_item {
     padding-block: 0;
   }
+
+  .footer_nav_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
@@ -321,6 +325,12 @@
   .subscribe_form_button {
     margin-top: 10px;
   }
+
+  .footer_nav_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -368,6 +378,10 @@
 
   .top_card_text {
     padding: 15px 10px;
+  }
+
+  .footer_nav_wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
