@@ -115,7 +115,16 @@
 }
 /* Contact style end */
 
-.footer_copirite_wrapper {
+.footer_copyrighte_wrapper {
   padding-block: 40px 55px;
   border-top: 1px solid var(--color-border);
+  color: var(--color-header-text);
+  justify-content: space-between;
+}
+
+.footer_copyrighte_text {
+  max-width: 750px;
+}
+
+.footer_copyrighte {
 }

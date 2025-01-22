@@ -148,6 +148,11 @@
   .footer_contacts_item {
     padding-right: 20px;
   }
+
+  .footer_copyrighte_wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
