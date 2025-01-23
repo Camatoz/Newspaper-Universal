@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Section Central_cards Style start */
 .central_cards {
   background-color: var(--color-body-bg);
@@ -5,6 +12,7 @@
 }
 
 .central_cards_wrapper {
+  display: -ms-grid;
   display: grid;
   gap: 30px;
   grid-template-areas:
@@ -19,12 +27,18 @@
 }
 
 .cars {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: cars;
   background-color: var(--color-light);
   max-width: 555px;
 }
 
 .cars_wrap {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -68,8 +82,14 @@
 }
 
 .cars_subtitle_comment_box_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 15px;
   height: 15px;
@@ -78,6 +98,7 @@
 
 .cars_subtitle_comment_box_img img {
   border-radius: 0;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -103,10 +124,21 @@
 }
 
 .popular {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
   grid-area: popular;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding-left: 25px;
   width: 262px;
@@ -170,6 +202,9 @@
 }
 
 .columns {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 7;
   grid-area: columns;
   width: 262px;
   background-color: var(--color-bg-alternative);
@@ -212,6 +247,8 @@
   position: absolute;
   top: 13%;
   left: 5%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
@@ -225,7 +262,12 @@
 }
 
 .central_cards_columns_card_reporter_title_box {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 10px;
 }
@@ -242,7 +284,13 @@
 }
 
 .central_cards_columns_card_reporter_title_box .cats {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: cats;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: var(--color-light);
   max-width: 262px;
@@ -269,7 +317,13 @@
 }
 
 .cats {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: cats;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 263px;
   background-color: var(--color-light);
@@ -296,18 +350,26 @@
 }
 
 .box-1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: box-1;
 }
 
 .box-2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   grid-area: box-2;
 }
 
 .box-3 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   grid-area: box-3;
 }
 
 .box-4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
   grid-area: box-4;
 }
 
@@ -315,8 +377,14 @@
   background-color: var(--color-light);
   color: var(--color-header-subtitle);
   width: 263px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 

@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .winners {
   background-color: var(--color-dark-gray);
   padding-block: 60px;
 }
 
 .winner_cards_wrapper {
+  display: -ms-grid;
   display: grid;
   gap: 30px;
   grid-template-areas:
@@ -13,6 +21,10 @@
 }
 
 .winner {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: winner;
   width: 555px;
   height: 570px;
@@ -21,6 +33,10 @@
 }
 
 .careers {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
   grid-area: careers;
   max-width: 555px;
   height: 370px;
@@ -29,11 +45,15 @@
 }
 
 .box-1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   grid-area: box-1;
   border-radius: var(--border-radius);
 }
 
 .box-2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
   grid-area: box-2;
   border-radius: var(--border-radius);
 }
@@ -54,6 +74,9 @@
 }
 
 .winners_description {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   color: var(--color-light);
@@ -107,8 +130,13 @@
 .careers_description {
   padding-left: 35px;
   width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 

@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .articles {
   padding-bottom: 60px;
   background-color: var(--color-body-bg);
 }
 
 .articles_wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 30px 263px;
   grid-template-columns: 1fr 263px;
   gap: 30px;
 }
@@ -34,14 +43,23 @@
 .articles_card_body {
   max-width: 460px;
   padding-left: 25px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 195px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .articles_card_body_subtitle {
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 15px;
 }
@@ -69,6 +87,7 @@
 }
 
 .articles_card_body_reaction {
+  -ms-flex-item-align: start;
   align-self: flex-start;
   color: #939699;
 }
@@ -85,8 +104,13 @@
 .articles_aside {
   border-radius: 10px;
   background-color: var(--color-light);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 262px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -132,7 +156,11 @@
 }
 
 .article_aside_card_description {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-line-pack: justify;
   align-content: space-between;
   height: 60px;
 }
@@ -261,5 +289,7 @@
   background-color: var(--color-dark-gray);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }

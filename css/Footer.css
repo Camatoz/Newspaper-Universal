@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .footer {
   background-color: var(--color-body-bg);
 }
@@ -36,7 +43,9 @@
 
 /* Navigation style start */
 .footer_nav_wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr) [6];
   grid-template-columns: repeat(6, 1fr);
   padding-bottom: 60px;
 }
@@ -85,6 +94,8 @@
 .footer_contacts_wrapper {
   padding-block: 30px;
   border-top: 1px solid var(--color-border);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -94,6 +105,8 @@
   background-color: var(--color-button-bg);
   color: var(--color-light);
   border-radius: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 400;
   font-size: 20px;
@@ -111,6 +124,8 @@
 
 .footer_contacts_socialmedia_box {
   width: 205px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 /* Contact style end */
@@ -119,12 +134,11 @@
   padding-block: 40px 55px;
   border-top: 1px solid var(--color-border);
   color: var(--color-header-text);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .footer_copyrighte_text {
   max-width: 750px;
-}
-
-.footer_copyrighte {
 }

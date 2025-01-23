@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Section Recomended Style start */
 .recomended {
   background-color: var(--color-body-bg);
@@ -5,8 +12,12 @@
 }
 
 .recomended_wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 877px 263px;
   grid-template-columns: 877px 263px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   padding-bottom: 30px;
 }
@@ -26,7 +37,12 @@
 }
 
 .recomended_inside_img_wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -85,8 +101,13 @@
 }
 
 .recomended_link_title_box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 10px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
