@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+  .travel_header_subtitle_wrap {
+    padding-block: 30px 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .travel_header_data_wrap {
+    flex-direction: column;
+  }
+
+  .travel_header_data_box_wrap {
+    padding-bottom: 30px;
+  }
+
+  .travel_header_text {
+    padding-bottom: 45px;
+  }
+}
