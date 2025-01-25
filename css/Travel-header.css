@@ -96,3 +96,7 @@
 .travel_header_button:hover {
   background-color: var(--color-dark);
 }
+
+.travel_header_data_box img {
+  opacity: 40%;
+}
