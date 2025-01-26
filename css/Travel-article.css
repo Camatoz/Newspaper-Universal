@@ -2,10 +2,10 @@
   padding-block: 60px;
 }
 
-.container_article {
+.container_article_wrap {
   display: grid;
   grid-template-columns: 623px 263px;
-  grid-column: 60px;
+  column-gap: 60px;
 }
 
 .travel_article_text {
@@ -42,9 +42,12 @@
 }
 
 .travel_aside_card {
+  width: 263px;
   height: 370px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
+  background-color: var(--color-light);
+  margin-top: -160px;
 }
 
 .travel_aside_image {
@@ -120,4 +123,8 @@
   color: var(--color-light);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.travel_article_geography_wrapper {
+  width: 623px;
 }

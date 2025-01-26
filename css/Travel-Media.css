@@ -1,6 +1,35 @@
+@media (max-width: 1024px) {
+  .container_article_wrap {
+    grid-template-columns: 1fr 263px;
+    gap: 20px;
+  }
+
+  .travel_article_geography_wrapper {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .travel_header_subtitle_wrap {
     padding-block: 30px 26px;
+  }
+
+  .container_article_wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .travel_aside_card {
+    order: 1;
+  }
+
+  .article {
+    order: 2;
+  }
+
+  .travel_article_text:first-child {
+    padding-bottom: 30px;
   }
 }
 
@@ -15,5 +44,12 @@
 
   .travel_header_text {
     padding-bottom: 45px;
+  }
+
+  .travel_article_text {
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 15px;
   }
 }
