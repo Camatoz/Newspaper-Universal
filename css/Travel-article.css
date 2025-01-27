@@ -292,3 +292,26 @@
   font-weight: 400;
 }
 /* QUOTE Style end */
+
+.article_navigation_wrap {
+  width: 623px;
+}
+
+.article_nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article_nav_link {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: var(--color-dark-gray);
+  font-weight: 400;
+}
+
+.article_nav_item {
+  padding-right: 10px;
+}
