@@ -128,3 +128,84 @@
 .travel_article_geography_wrapper {
   width: 623px;
 }
+
+/* Slider Style start */
+.travel_article_slider_wrapper {
+  text-align: center;
+  padding-bottom: 60px;
+  border-radius: var(--border-radius);
+}
+
+.travel_article_slider {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; /* Включить прокрутку с фиксацией */
+  scroll-behavior: smooth; /* Гладкая прокрутка */
+  gap: 10px; /* Отступы между слайдами */
+  width: 1140px;
+}
+
+.travel_article_slide {
+  flex: 0 0 100%; /* Каждый слайд занимает 100% ширины контейнера */
+  height: 555px; /* Высота слайда */
+  background: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  scroll-snap-align: center; /* Слайды фиксируются по центру */
+}
+
+.travel_article_slide_description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* border-inline: 1px solid var(--color-border); */
+  border: 1px solid var(--color-border);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.travel_article_slide_autor {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 30px;
+  padding-block: 12px;
+  border-left: 1px solid var(--color-border);
+}
+
+.travel_article_slide_desc {
+  padding-left: 35px;
+  color: var(--color-header-subtitle);
+  font-weight: 400;
+}
+
+.travel_article_slide_images {
+  width: 45px;
+  height: 45px;
+}
+
+.travel_article_slide_autor_desc {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 10px;
+}
+
+.travel_article_slide_autor_name {
+  color: var(--color-header-subtitle);
+  font-weight: 400;
+}
+
+.travel_article_slide_autor_profession {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-header-text);
+}
+
+/* Slider Style end */
