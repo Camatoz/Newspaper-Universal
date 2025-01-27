@@ -1,5 +1,6 @@
 .article_wrapper {
   padding-block: 60px;
+  position: relative;
 }
 
 .container_article_wrap {
@@ -253,3 +254,41 @@
   padding-left: 5px;
 }
 /* Material Style end */
+
+/* QUOTE Style start */
+.container_article_quote {
+  padding-bottom: 45px;
+}
+
+.travel_article_text_quote {
+  position: relative;
+  width: 455px;
+  font-family: Roboto Slab;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+  z-index: 1;
+}
+
+.travel_article_text_quote::before {
+  position: absolute;
+  content: url("../img/Travel/icon/Quote.svg");
+  display: inline-block;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.article_flex_class {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travel_article_quote_autor {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-header-subtitle);
+  font-weight: 400;
+}
+/* QUOTE Style end */

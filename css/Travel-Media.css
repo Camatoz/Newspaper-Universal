@@ -91,4 +91,8 @@
   .article_wrapper {
     padding-block: 30px;
   }
+
+  .travel_article_text_quote {
+    width: 100%;
+  }
 }
