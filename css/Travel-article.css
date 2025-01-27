@@ -28,7 +28,7 @@
   padding-right: 10px;
 }
 
-.travel_article_text:first-child {
+.travel_article_text_first {
   padding-bottom: 60px;
 }
 
@@ -209,3 +209,47 @@
 }
 
 /* Slider Style end */
+
+/* Material Style start */
+.travel_aside_material {
+  width: 263px;
+  padding-top: 100px;
+}
+
+.article_wrapper_less {
+  padding-top: 0;
+}
+
+.travel_as_title_padding {
+  padding-bottom: 20px;
+}
+
+.travel_second_article_image {
+  width: 263px;
+  height: 180px;
+}
+
+.travel_aside_title_second {
+  padding-top: 15px;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+}
+
+.travel_aside_comments_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travel_aside_reaction_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.travel_aside_reaction_box p {
+  padding-left: 5px;
+}
+/* Material Style end */
