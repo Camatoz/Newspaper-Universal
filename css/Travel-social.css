@@ -94,3 +94,38 @@
   padding-block: 60px 90px;
   background-color: var(--color-body-bg);
 }
+
+/* Footer Card Style start */
+.travel_footer_cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.travel_footer_card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.travel_footer_card_image {
+  padding-bottom: 15px;
+}
+
+.travel_footer_card_title {
+  font-family: Roboto Slab;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--color-dark-gray);
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.travel_footer_card_text {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-header-text);
+  font-weight: 400;
+}
+/* Footer Card Style end */

@@ -6,6 +6,10 @@
   .travel_article_slide {
     height: auto;
   }
+
+  .travel_footer_cards_wrapper {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -62,6 +66,22 @@
 
   .article_navigation_wrap {
     width: 100%;
+  }
+
+  .travel_footer_cards_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 263px);
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .travel_footer_cards_wrapper {
+    display: grid;
+    grid-template-columns: 263px;
+    justify-content: center;
+    gap: 30px;
   }
 }
 
