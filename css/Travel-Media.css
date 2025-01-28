@@ -59,6 +59,10 @@
   .travel_aside_material {
     padding-top: 0;
   }
+
+  .article_navigation_wrap {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {

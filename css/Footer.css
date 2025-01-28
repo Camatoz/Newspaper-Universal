@@ -122,7 +122,12 @@
   color: var(--color-dark-gray);
 }
 
-.footer_contacts_socialmedia_box {
+.footer_contacts_link:hover {
+  color: var(--color-header-text);
+}
+
+.footer_contacts_socialmedia_box,
+.footer_contact_socialmedia_list {
   width: 205px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;

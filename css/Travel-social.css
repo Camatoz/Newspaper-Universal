@@ -1,0 +1,27 @@
+.travel_social_title {
+  font-family: Roboto Slab;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-dark-gray);
+  font-weight: 700;
+  padding-block: 30px 25px;
+}
+
+.travel_social_buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travel_social_button_wrap {
+  position: relative;
+  padding-right: 10px;
+}
+
+.travel_social_button {
+  padding: 10px 50px;
+  font-weight: 400;
+}
+
+.travel_social_box {
+  padding-bottom: 90px;
+}

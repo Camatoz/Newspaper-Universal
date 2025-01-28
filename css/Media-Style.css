@@ -98,6 +98,8 @@
   }
 
   .cont-center {
+    display: -ms-grid;
+    display: grid;
     justify-items: center;
   }
 
