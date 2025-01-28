@@ -12,16 +12,85 @@
   flex-wrap: wrap;
 }
 
+.travel_social_box {
+  padding-bottom: 90px;
+}
+
 .travel_social_button_wrap {
   position: relative;
   padding-right: 10px;
 }
 
 .travel_social_button {
-  padding: 10px 50px;
+  padding: 12px 50px;
   font-weight: 400;
 }
 
-.travel_social_box {
-  padding-bottom: 90px;
+.tr_soc_but_like {
+  background-color: #ff4f52;
+}
+
+.tr_soc_but_like::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Travel/icon/Heart-white.svg) center / 70% no-repeat;
+}
+
+.tr_soc_but_like::after {
+  content: "42";
+  position: absolute;
+  right: 25px;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.tr_soc_but_face {
+  background-color: #4267b2;
+}
+
+.tr_soc_but_face::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 14px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Travel/icon/Facebook-white.svg) center / 70% no-repeat;
+}
+
+.tr_soc_but_face::after {
+  content: "80";
+  position: absolute;
+  right: 25px;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.tr_soc_but_tweet {
+  background-color: #1da1f2;
+}
+
+.tr_soc_but_tweet::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(../img/Travel/icon/Twitter-white.svg) center / 70% no-repeat;
+}
+
+.tr_soc_but_tweet::after {
+  content: "42";
+  position: absolute;
+  right: 25px;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.travel_footer_cards {
+  padding-block: 60px 90px;
+  background-color: var(--color-body-bg);
 }

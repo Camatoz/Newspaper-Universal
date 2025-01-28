@@ -107,4 +107,18 @@
   .container_article_quote {
     padding-bottom: 30px;
   }
+
+  .article_nav_list {
+    padding-bottom: 30px;
+  }
+
+  .travel_social_buttons {
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-between;
+  }
+
+  .travel_social_box {
+    padding-bottom: 45px;
+  }
 }
