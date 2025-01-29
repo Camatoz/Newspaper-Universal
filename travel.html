@@ -635,8 +635,8 @@
               </div>
             </div>
             <!-- /// -->
-            <div class="travel_comment_box">
-              <div class="travel_comment_image comment_answer">
+            <div class="travel_comment_box comment_answer">
+              <div class="travel_comment_image">
                 <img
                   src="./img/Travel/travel-reporter-4.png"
                   alt="reporter-icon"
@@ -708,6 +708,47 @@
               </div>
             </div>
             <!-- /// -->
+            <div class="travel_comment_button_wrap">
+              <a href="/" class="travel_comment_button button">Load more</a>
+            </div>
+            <!-- /// -->
+            <div class="travel_comment_form_wrapper">
+              <div class="travel_comment_form_wrap">
+                <div class="travel_comment_form_image">
+                  <img
+                    src="./img/Travel/travel_reporter-6.png"
+                    alt="reporter-icon"
+                    class="travel_comment_form_img"
+                  />
+                </div>
+                <div class="travel_comment_form_box">
+                  <form
+                    action="/submit-comment"
+                    method="post"
+                    class="travel_comment-form"
+                  >
+                    <label class="travel_comment_form_title" for="comment"
+                      >What do you think?</label
+                    >
+                    <textarea
+                      id="comment"
+                      class="travel_comment_textarea"
+                      name="comment"
+                      rows="4"
+                      placeholder="Write your comment..."
+                      required
+                    ></textarea>
+
+                    <button
+                      class="travel_comment_form_button button"
+                      type="button"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

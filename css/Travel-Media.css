@@ -74,6 +74,30 @@
     justify-content: center;
     gap: 30px;
   }
+
+  .travel_comment_image {
+    padding-left: 15px;
+  }
+
+  .comment_answer {
+    padding-left: 60px;
+  }
+
+  .travel_comment_form_wrap {
+    flex-direction: column;
+  }
+
+  .travel_comment_form_image {
+    padding-top: 0;
+  }
+
+  .travel_comment-form {
+    padding-left: 0;
+  }
+
+  .travel_comment_textarea {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -144,5 +168,9 @@
 
   .travel_comments_title_box {
     padding-bottom: 10px;
+  }
+
+  .travel_comment_form_wrap {
+    padding: 20px;
   }
 }

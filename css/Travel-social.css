@@ -202,6 +202,11 @@
   padding-top: 20px;
 }
 
+.travel_comment_image {
+  width: 75px;
+  aspect-ratio: 1;
+}
+
 .travel_comment_desc_box {
   display: flex;
   flex-wrap: wrap;
@@ -306,5 +311,96 @@
   left: 100%; /* Центрирование по горизонтали */
   transform: translate(-40%, -40%);
 }
+
+.travel_comment_button_wrap {
+  padding-block: 30px 60px;
+}
+
+.travel_comment_button {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: inherit;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+  padding-left: 45%;
+  border: 1px solid var(--color-border);
+}
+
+.travel_comment_button:hover {
+  color: var(--color-light);
+  border: 1px solid var(--color-dark-gray);
+  background-color: var(--color-dark-gray);
+}
+
+.travel_comment_button::before {
+  content: url("../img/Travel/icon/Loading.svg");
+  display: inline-block;
+  padding-right: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%; /* Центрирование по вертикали */
+  left: 90%; /* Центрирование по горизонтали */
+  transform: translate(-50%, -23%);
+}
 /* Comment style end */
+/* Comment Form style start */
+.travel_comment_form_wrapper {
+  padding-bottom: 30px;
+}
+
+.travel_comment_form_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-body-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+}
+
+.travel_comment_form_image {
+  padding-top: 40px;
+}
+
+.travel_comment-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.travel_comment_form_title {
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--color-dark-gray);
+  padding-bottom: 15px;
+}
+
+.travel_comment_textarea {
+  width: 595px;
+  height: 130px;
+  margin-bottom: 15px;
+}
+
+.travel_comment_form_button {
+  position: relative;
+  width: 120px;
+  padding-right: 30px;
+}
+
+.travel_comment_form_button::after {
+  content: url("../img/Icon/arrow-right.svg");
+  display: inline-block;
+  padding-left: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 72%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+}
+/* Comment Form style end */
 /* Comments Style end */
