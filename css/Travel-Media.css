@@ -141,7 +141,7 @@
   }
 
   .article_wrapper {
-    padding-block: 0 30px;
+    padding-block: 0 20px;
   }
 
   .travel_article_text_quote {
@@ -149,7 +149,7 @@
   }
 
   .container_article_quote {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .article_nav_list {
@@ -172,5 +172,17 @@
 
   .travel_comment_form_wrap {
     padding: 20px;
+  }
+
+  .travel_aside_card {
+    margin-top: -110px;
+  }
+
+  .travel_footer_cards {
+    padding-block: 40px;
+  }
+
+  .travel_comments_title_wrap {
+    padding-block: 40px 20px;
   }
 }
