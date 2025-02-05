@@ -28,7 +28,7 @@
   grid-area: winner;
   width: 555px;
   height: 570px;
-  background: url(../img/winner-bg-1.png) no-repeat center / cover;
+  background: url(../img/winner-bg-1-min.png) no-repeat center / cover;
   border-radius: var(--border-radius);
 }
 

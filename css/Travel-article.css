@@ -1,11 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .article_wrapper {
   padding-block: 60px;
   position: relative;
 }
 
 .container_article_wrap {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 623px 60px 263px;
   grid-template-columns: 623px 263px;
+  -webkit-column-gap: 60px;
+  -moz-column-gap: 60px;
   column-gap: 60px;
 }
 
@@ -75,19 +86,35 @@
 }
 
 .travel_aside_card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid var(--color-border);
 }
 
 .travel_aside_sochial_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 140px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 30px;
 }
@@ -97,9 +124,16 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -108,9 +142,16 @@
 }
 
 .travel_aside_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -140,8 +181,11 @@
 .travel_article_slider {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory; /* Включить прокрутку с фиксацией */
   scroll-behavior: smooth; /* Гладкая прокрутка */
   gap: 10px; /* Отступы между слайдами */
@@ -149,21 +193,36 @@
 }
 
 .travel_article_slide {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
   flex: 0 0 100%; /* Каждый слайд занимает 100% ширины контейнера */
   height: 555px; /* Высота слайда */
   background: #4caf50;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 2em;
   scroll-snap-align: center; /* Слайды фиксируются по центру */
 }
 
 .travel_article_slide_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   /* border-inline: 1px solid var(--color-border); */
   border: 1px solid var(--color-border);
@@ -172,7 +231,10 @@
 }
 
 .travel_article_slide_autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-inline: 30px;
   padding-block: 12px;
@@ -191,9 +253,17 @@
 }
 
 .travel_article_slide_autor_desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
   padding-left: 10px;
 }
@@ -240,12 +310,18 @@
 }
 
 .travel_aside_comments_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .travel_aside_reaction_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-right: 10px;
 }
@@ -281,7 +357,10 @@
 }
 
 .article_flex_class {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -298,7 +377,10 @@
 }
 
 .article_nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-bottom: 60px;
   border-bottom: 1px solid var(--color-border);

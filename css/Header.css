@@ -67,7 +67,7 @@ body {
 
 .container_article {
   max-width: calc(var(--container-article) + var(--container-padding-x) * 2);
-  margin-inline: auto;
+  margin-inline: 0;
   padding-inline: var(--container-padding-x);
 }
 

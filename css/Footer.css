@@ -45,7 +45,8 @@
 .footer_nav_wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [6];
+  /* -ms-grid-columns: (1fr) [6]; */
+  -ms-grid-columns: auto auto auto auto auto auto;
   grid-template-columns: repeat(6, 1fr);
   padding-bottom: 60px;
 }

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1140px) {
   .travel_article_slider {
     width: 100%;
@@ -14,6 +21,7 @@
 
 @media (max-width: 1024px) {
   .container_article_wrap {
+    -ms-grid-columns: 1fr 20px 263px;
     grid-template-columns: 1fr 263px;
     gap: 20px;
   }
@@ -34,16 +42,21 @@
   }
 
   .container_article_wrap {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
   }
 
   .travel_aside_card {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 
   .article {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 
@@ -69,8 +82,12 @@
   }
 
   .travel_footer_cards_wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 263px 30px 263px;
     grid-template-columns: repeat(2, 263px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
   }
@@ -84,6 +101,9 @@
   }
 
   .travel_comment_form_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -102,8 +122,12 @@
 
 @media (max-width: 600px) {
   .travel_footer_cards_wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 263px;
     grid-template-columns: 263px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
   }
@@ -111,6 +135,9 @@
 
 @media (max-width: 500px) {
   .travel_header_data_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -134,7 +161,12 @@
   }
 
   .travel_article_slide_autor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-inline: 5px;
     padding-block: 12px;
@@ -157,8 +189,13 @@
   }
 
   .travel_social_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 130px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -184,5 +221,9 @@
 
   .travel_comments_title_wrap {
     padding-block: 40px 20px;
+  }
+
+  .travel_comment_button::before {
+    width: 15%;
   }
 }
